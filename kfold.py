@@ -8,8 +8,8 @@ import time
 import os
 import numpy as np
 
-def k_fold_runner(csv_path: str = os.path.join("kaggle", "input", "simply-supported-chamod", "Simply_supported", "Target"),
-                 target_folder: str = os.path.join("kaggle", "input", "simply-supported-chamod", "Simply_supported", "Data.csv"),
+def k_fold_runner(csv_path: str = os.path.join("kaggle", "input", "simply-supported-chamod", "Simply_supported", "Data.csv"),
+                 target_folder: str = os.path.join("kaggle", "input", "simply-supported-chamod", "Simply_supported", "Target"),
                  batch_size: int = 19,
                  run_grid_search: bool = False,
                  num_folds: int = 4) -> None:
@@ -172,8 +172,8 @@ def k_fold_runner(csv_path: str = os.path.join("kaggle", "input", "simply-suppor
             )
 
 if __name__ == "__main__":
-    DEFAULT_CSV_PATH = os.path.join("Simply_supported", "Data.csv")
-    DEFAULT_TARGET_FOLDER = os.path.join("Simply_supported", "Target")
+    DEFAULT_CSV_PATH = os.path.join("kaggle", "input", "simply-supported-chamod", "Simply_supported", "Data.csv")
+    DEFAULT_TARGET_FOLDER = os.path.join("kaggle", "input", "simply-supported-chamod", "Simply_supported", "Target")
     
     parser = argparse.ArgumentParser(
         description="Run k-fold cross validation for diffusion GAN",
