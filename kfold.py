@@ -8,8 +8,8 @@ import time
 import os
 import numpy as np
 
-def k_fold_runner(csv_path: str = os.path.join("Simply_supported", "Data.csv"),
-                 target_folder: str = os.path.join("Simply_supported", "Target"),
+def k_fold_runner(csv_path: str = os.path.join("kaggle", "input", "simply-supported-chamod", "Simply_supported", "Target"),
+                 target_folder: str = os.path.join("kaggle", "input", "simply-supported-chamod", "Simply_supported", "Data.csv"),
                  batch_size: int = 19,
                  run_grid_search: bool = False,
                  num_folds: int = 4) -> None:
